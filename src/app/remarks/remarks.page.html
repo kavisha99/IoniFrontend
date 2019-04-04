@@ -1,0 +1,35 @@
+<ion-header >
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+    <ion-title style="font-size: 1.5em; " padding text-center>Remarks</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <br>
+<ion-item *ngFor="let itemm of classarr" [(ngModel)]="class" name="class">
+  <ion-label color="primary">Class {{itemm}}</ion-label>
+    <ion-select placeholder="Select Division" [(ngModel)]="div" required (click)="Onclick(itemm);">
+        <ion-select-option *ngFor="let item of divarr" value="item">{{item}}</ion-select-option>
+    </ion-select>
+</ion-item> 
+<br>
+<br>
+<!-- <ion-item>
+    <ion-label color="primary">Division</ion-label>
+      <ion-select placeholder="Select Division" [(ngModel)]="div" name="div" required>
+          <ion-select-option *ngFor="let item of divarr" [value]="item">{{item}}</ion-select-option>
+      </ion-select>
+  </ion-item>    
+  <br>
+  <br> -->
+  <!-- <ion-button style="margin-left:10%; width:80%; border-radius:20%;" class="center ion-buttons " >show Students</ion-button> -->
+</ion-content>
+
+<!-- <ion-label color="primary">Class</ion-label>
+    <ion-select placeholder="Select One" [class.error1]="!myForm.controls.user_type.valid" formControlName="user_type" [(ngModel)]="user_type" name="user_type" required>
+        <ion-select-option *ngFor="let item of usertype_arr" [value]="item">{{item}}</ion-select-option>
+      </ion-select> -->

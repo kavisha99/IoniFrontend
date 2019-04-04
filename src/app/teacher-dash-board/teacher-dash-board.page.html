@@ -1,0 +1,181 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+      <ion-title style="font-size: 1.5em" padding>MY DASHBOARD</ion-title>
+    </ion-toolbar>
+  </ion-header>
+<ion-content class="has-header">
+    <ion-card class="myCard">
+      <img src="../../assets/photos/varsha.jpg"/>
+      <div class="myOverlay">
+         <div class="card-title">San Francisco</div>
+         <div class="card-subtitle">72 Listings</div>
+      </div>
+    </ion-card>
+  </ion-content>
+<!-- <ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+      <ion-title style="font-size: 1.5em" padding>MY DASHBOARD</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content no-padding>
+      <ion-card no-padding style="width:150%;">
+        <ion-item padding item-left style="height: 200%;">
+        <ion-avatar no-padding left center item-left >
+          <img ion-img src="../../assets/photos/logo.jpg" left style="width:150%; height: 120%;">
+        </ion-avatar>
+        <h6><b>&nbsp;&nbsp;&nbsp;Name:</b>kavisha shukla<br>
+          <b>&nbsp;&nbsp;&nbsp;Class:</b>12<br>
+          <b>&nbsp;&nbsp;&nbsp;Roll No:</b> 3243<br></h6>
+      </ion-item>
+      </ion-card>
+  
+  <ion-grid style="border: 2px  gray; grid-auto-flow: row ">
+    <ion-row>
+      <ion-col col-sm-3>
+        <ion-card text-center no-padding color="light">
+          <ion-icon name="person"></ion-icon>
+          <h6>My profile</h6>
+        </ion-card>
+      </ion-col>
+      <ion-col col-sm-3>
+          <ion-card text-center no-padding color="light">
+            <ion-icon name="grid"></ion-icon>
+            <h6>Attendance</h6>
+          </ion-card>
+        </ion-col>
+    </ion-row> 
+
+    <ion-row>
+        <ion-col>
+          <ion-card text-center no-padding color="light">
+            <ion-icon name="list"></ion-icon>
+            <h6>Remark</h6>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+            <ion-card text-center no-padding color="light">
+              <ion-icon name="folder"></ion-icon>
+              <h6>Syllabus</h6>
+            </ion-card>
+          </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col>
+            <ion-card text-center no-padding color="light">
+              <ion-icon name="copy"></ion-icon>
+              <h6>Exam<br>Result</h6>
+            </ion-card>
+          </ion-col>
+          <ion-col>
+              <ion-card text-center no-padding color="light">
+                <ion-icon name="book"></ion-icon>
+                <h6>class<br>Assignment</h6>
+              </ion-card>
+            </ion-col>
+        </ion-row>
+
+    <ion-row>
+        <ion-col>
+          <ion-card text-center no-padding color="light">
+            <ion-icon name="notifications-outline"></ion-icon>
+            <h6>Notice</h6>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+            <ion-card text-center no-padding color="light">
+              <ion-icon name="calendar"></ion-icon>
+              <h6>Time Table</h6>
+            </ion-card>
+          </ion-col>
+      </ion-row>
+
+      <ion-row>
+          <ion-col>
+            
+            <ion-card text-center no-padding color="light" (click)="onHomeWork()" >
+              <ion-icon name="clipboard" ></ion-icon>
+              <h6>Home<br>Work</h6>
+            
+            </ion-card>
+              
+          </ion-col>
+          <ion-col>
+              <ion-card text-center no-padding color="light">
+                <ion-icon name="list-box"></ion-icon>
+                <h6>Holiday<br>List</h6>
+              </ion-card>
+            </ion-col>
+        </ion-row>
+
+        <ion-row>
+            <ion-col>
+              <ion-card text-center no-padding color="light">
+                <ion-icon name="paper"></ion-icon>
+                <h6>Past <br>Papers</h6>
+              </ion-card>
+            </ion-col>
+            <ion-col>
+                <ion-card text-center no-padding color="light">
+                  <ion-icon name="photos"></ion-icon>
+                  <h6>Photo<br>Gallery</h6>
+                </ion-card>
+              </ion-col>
+          </ion-row>
+
+          <ion-row>
+              <ion-col>
+                <ion-card text-center no-padding color="light">
+                  <ion-icon name="text"></ion-icon>
+                  <h6>Teacher<br>Interaction</h6>
+                </ion-card>
+              </ion-col>
+              <ion-col>
+                  <ion-card text-center no-padding color="light">
+                    <ion-icon name="checkbox"></ion-icon>
+                    <h6>My<br>Leave</h6>
+                  </ion-card>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col>
+                  <ion-card text-center no-padding color="light">
+                    <ion-icon name="book"></ion-icon>
+                    <h6>Regular Notes</h6>
+                  </ion-card>
+                </ion-col>
+                <ion-col>
+                    <ion-card text-center no-padding color="light">
+                      <ion-icon name="paper-plane"></ion-icon>
+                      <h6>Location</h6>
+                    </ion-card>
+                  </ion-col>
+              </ion-row>
+  </ion-grid>
+    
+</ion-content>
+
+<!-- <ion-content padding>
+    <ion-card>
+      <ion-item>
+      <ion-avatar item-start>
+        <img src="../../assets/photos/logo.jpg">
+      </ion-avatar>
+      <h2>Name: kavisha<br>
+          Roll No: 3243<br>
+          Class: 12</h2>
+       <h5 text-right>name: kavisha</h5><br>
+      <h5 text-right>roll no: 111</h5><br>
+      <h5 text-right>class: 12</h5><br>
+    </ion-item>
+    </ion-card>
+      
+
+</ion-content> --> -->

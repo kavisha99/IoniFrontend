@@ -1,0 +1,22 @@
+.example-tree-invisible {
+  display: none;
+}
+
+.example-tree ul,
+.example-tree li {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+// div:nth-child(even)
+// {
+//   background-color:gray;
+//   width: 30%;
+//   height: 30%;;
+// }
+div:nth-child(odd)
+{
+  background-color:whitesmoke;
+  width: 100%;
+  height: 100%;;
+}

@@ -7,12 +7,143 @@
         </ion-toolbar>
       </ion-header>
       <ion-content>
+        
         <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
+
+            <ion-menu-toggle auto-hide="false">
+              <ion-item style="height:auto;" [routerDirection]="'root'" routerLink="/profile">
+                      <ion-card class="myCard" style=" margin: 0%; height:150%; ">
+                        <img src="http://localhost:3000/images/{{path}}" style=" height: 50%; width:30%; margin-top: 14%;"/>
+                        <div class="myOverlay" style="margin-left: 32%; position: absolute; z-index: 99; bottom: 0px; top: 0px;">
+                          <br> 
+                          <div class="card-title" style="margin-left: 1%;"><h4 style="color: black;">{{name}}<br>{{class}}-{{div}}</h4></div>
+                           <br>
+                           <!-- <div class="card-subtitle"><h3 style="color: black">{{class}}-{{div}}</h3></div> -->
+                        </div>
+                      </ion-card>
+                    </ion-item>
+              </ion-menu-toggle>
+            
+
+          <!-- <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
             <ion-item [routerDirection]="'root'" [routerLink]="[p.url]">
               <ion-icon slot="start" [name]="p.icon"></ion-icon>
               <ion-label>
                 {{p.title}}
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle> -->
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" routerLink="/home">
+              <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+              <ion-icon ios="ios-home" md="md-home"></ion-icon>
+              <ion-label>
+                Home
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" routerLink="/openpdf">
+              <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+              <ion-icon ios="ios-home" md="md-home"></ion-icon>
+              <ion-label>
+                open pdf
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" routerLink="/list">
+              <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+              <ion-icon ios="ios-list" md="md-list"></ion-icon>
+              <ion-label>
+                List
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle auto-hide="false">
+              <ion-item [routerDirection]="'root'" routerLink="/remarks">
+                <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+                <ion-icon ios="ios-list" md="md-list"></ion-icon>
+                <ion-label>
+                  List
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+  
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" routerLink="/log-in-page">
+              <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+              <ion-icon ios="ios-log-in" md="md-log-in"></ion-icon>
+              <ion-label>
+                LogIn
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle auto-hide="false">
+              <ion-item [routerDirection]="'root'" routerLink="/timetable">
+                <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+                <ion-icon name="contact"></ion-icon>
+                <ion-label>
+                  Timetable
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+  
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" routerLink="/parent-dash-board-page">
+              <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+              <ion-icon name="contact"></ion-icon>
+              <ion-label>
+                DashBoard
+              </ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+
+          <ion-menu-toggle auto-hide="false">
+              <ion-item [routerDirection]="'root'" routerLink="/teacher-dash-board">
+                <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+                <ion-icon name="contact"></ion-icon>
+                <ion-label>
+                  Teacher DashBoard
+                </ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+
+            <ion-menu-toggle auto-hide="false">
+                <ion-item [routerDirection]="'root'" routerLink="/notes">
+                  <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+                  <ion-icon name="contact"></ion-icon>
+                  <ion-label>
+                    Notes
+                  </ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+  
+              <ion-menu-toggle auto-hide="false">
+                  <ion-item [routerDirection]="'root'" routerLink="/homework">
+                    <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+                    <ion-icon name="contact"></ion-icon>
+                    <ion-label>
+                      Home Work
+                    </ion-label>
+                  </ion-item>
+                </ion-menu-toggle>
+    
+  
+
+          <ion-menu-toggle auto-hide="false">
+            <ion-item [routerDirection]="'root'" routerLink="/log-in-page">
+              <!-- <ion-icon slot="start" [name]=""></ion-icon> -->
+              <ion-icon ios="ios-log-out" md="md-log-out"></ion-icon>
+              <ion-label>
+                LogOut
               </ion-label>
             </ion-item>
           </ion-menu-toggle>

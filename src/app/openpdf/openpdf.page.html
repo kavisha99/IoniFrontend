@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div class="container">
+   <div class="example-container">  
+    <mat-form-field>
+      <input matInput
+      placeholder="Email"
+      required
+      email
+  
+      [(ngModel)]="user_id"
+      id="email_id"
+      name="email_id"
+      #email="ngModel">
+  
+      <mat-error *ngIf="email?.hasError('required')">
+        User id required
+      </mat-error>
+  
+      <mat-error *ngIf="email?.hasError('email')">
+        User id is incorrect
+      </mat-error>
+    </mat-form-field>
+  
+     <mat-form-field hintLabel="Minimum Char 8 and Maximum 12">
+      <input matInput
+      placeholder="Password"
+      required
+  
+      [(ngModel)]="password"
+      id="password"
+      name="password"
+      #name="ngModel"
+      minlength="8"
+      maxlength="12"
+      [type]="flag?'password':'text'">
+  
+      <mat-error *ngIf="name?.hasError('required')">
+        Password is required
+      </mat-error>
+  
+      <!-- <mat-hint align="end">{{name.value.length}}/12</mat-hint> -->
+  
+     <mat-icon matSuffix (click)="flag=!flag">{{flag?'visibility':'visibility_off'}}</mat-icon>
+  
+     </mat-form-field>
+   <!-- <mat-form-field>
+      <mat-select placeholder="userType" name="user_type" [(ngModel)]="user_type">
+        <mat-option *ngFor="let item of usertype" [value]="item">{{item}}</mat-option>
+      </mat-select>
+    </mat-form-field> -->
+  <br>
+  <br>
+    <div class="button-row">
+      <button mat-raised-button color="primary" (click)="onLogin()">Login</button>
+    </div>
+    
+    <div class="button-row">
+      Not have account?<a (click)="onSign()">sign up</a>
+    </div>
+
+    </div>
+    </div>
+  
+</ion-content>
+

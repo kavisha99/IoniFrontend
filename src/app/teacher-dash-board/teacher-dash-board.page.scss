@@ -1,0 +1,28 @@
+img{
+    width:30%;
+    height:50%;
+    border-radius: 30%
+  }
+  
+  .myCard{
+    position:relative;
+  
+  }
+  
+  .myOverlay{
+      width: 150%;
+      height: 200px;
+      position: absolute;
+      z-index: 99;
+      bottom: 0px;
+      top:0px;
+      opacity: 0.5;
+      //background: #000;
+      background: whitesmoke;
+      color:black;
+      text-decoration-color: black;
+      margin-left: 32%;
+      margin-top: 2%;
+  
+  }
+  
